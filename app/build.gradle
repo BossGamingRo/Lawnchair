@@ -15,7 +15,7 @@ android {
         travis {
             storeFile file("debug.jks")
             storePassword System.getenv("STORE_PASSWORD")
-            keyAlias "Lawnchair"
+            keyAlias "O.W.A Launcher 2018"
             keyPassword System.getenv("KEY_PASSWORD")
         }
     }
@@ -23,7 +23,7 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 27
-        applicationId "ch.deletescape.lawnchair"
+        applicationId "ch.bossgamingro.owalauncher2018"
 
         buildConfigField "boolean", "TRAVIS", System.getenv("TRAVIS") ?: "false"
         buildConfigField "boolean", "TAGGED_BUILD", System.getenv("TRAVIS_TAG") ? "true" : "false"
